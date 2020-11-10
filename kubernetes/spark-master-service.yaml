@@ -3,9 +3,11 @@ apiVersion: v1
 metadata:
   name: spark-master
 spec:
+  type: NodePort
   ports:
     - name: webui
       port: 8080
+      nodePort: 30220
       targetPort: 8080
     - name: spark
       port: 7077

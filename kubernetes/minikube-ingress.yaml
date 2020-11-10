@@ -5,10 +5,10 @@ metadata:
   annotations:
 spec:
   rules:
-  - host: spark-kubernetes
-    http:
+#  - host: spark-kubernetes
+  -  http:
       paths:
-      - path: /
+      - path: /spark/
         backend:
           serviceName: spark-master
           servicePort: 8080
